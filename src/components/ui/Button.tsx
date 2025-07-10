@@ -29,9 +29,16 @@ const Button: React.FC<ButtonProps> = ({
     lg: 'px-8 py-4 text-lg'
   };
 
+  const classes = [
+    baseClasses,
+    variants[variant],
+    sizes[size],
+    className
+  ].filter(Boolean).join(' ');
+
   return (
     <button
-      className={cn(baseClasses, variants[variant], sizes[size], className)}
+      className={classes}
       {...props}
     >
       {children}

@@ -1,5 +1,4 @@
 import React from 'react';
-import { cn } from '@/lib/utils';
 
 interface CardProps {
   children: React.ReactNode;
@@ -8,14 +7,14 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ children, className, hover = true }) => {
+  const classes = [
+    'bg-white rounded-xl shadow-lg p-6',
+    hover && 'transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl',
+    className
+  ].filter(Boolean).join(' ');
+
   return (
-    <div
-      className={cn(
-        'bg-white rounded-xl shadow-lg p-6',
-        hover && 'transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl',
-        className
-      )}
-    >
+    <div className={classes}>
       {children}
     </div>
   );

@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Data Analytics Landing Page - Next.js
 
-## Getting Started
+A modern, responsive landing page for a Data Analytics bootcamp built with Next.js, TypeScript, and Tailwind CSS. This project showcases a complete conversion from HTML to a component-based Next.js application.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Responsive Design**: Fully responsive layout that works on all device sizes
+- **Modern UI Components**: Clean, reusable components with hover effects and animations
+- **Interactive Elements**: Functional modals, forms, and navigation
+- **TypeScript**: Full type safety throughout the application
+- **Tailwind CSS**: Utility-first CSS framework for rapid styling
+- **Component Architecture**: Well-organized, modular component structure
+- **Performance Optimized**: Next.js optimizations including Image component and font optimization
+
+## 🏗️ Project Structure
+
+```
+src/
+├── app/                    # Next.js app directory
+│   ├── globals.css        # Global styles and animations
+│   ├── layout.tsx         # Root layout component
+│   └── page.tsx          # Main page component
+├── components/
+│   ├── sections/          # Page section components
+│   │   ├── Navigation.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── CourseOverview.tsx
+│   │   ├── CurriculumSection.tsx
+│   │   ├── TargetAudienceSection.tsx
+│   │   ├── TestimonialsSection.tsx
+│   │   ├── PricingSection.tsx
+│   │   └── Footer.tsx
+│   └── ui/               # Reusable UI components
+│       ├── Button.tsx
+│       ├── Card.tsx
+│       ├── Modal.tsx
+│       └── ContactForm.tsx
+├── data/
+│   └── courseData.ts     # Static data and constants
+├── hooks/
+│   └── useModal.ts       # Custom React hooks
+└── lib/
+    └── utils.ts          # Utility functions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Installation
 
-## Learn More
+1. **Navigate to the project directory**
+   ```bash
+   cd marketing-ads-app
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Open your browser**
+   Navigate to [http://localhost:3001](http://localhost:3001)
 
-## Deploy on Vercel
+## 🎯 Key Features Implemented
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### ✅ Responsive Design
+- Mobile-first approach
+- Breakpoint-based layouts
+- Touch-friendly interactions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### ✅ Interactive Elements
+- Expandable curriculum modules
+- Functional contact forms
+- Modal dialogs for demos and counseling
+- Smooth scroll navigation
+
+### ✅ Performance Optimizations
+- Next.js Image component for optimized images
+- Font optimization with Google Fonts
+- CSS animations with GPU acceleration
+- Code splitting and lazy loading
+
+## 🛠️ Technologies Used
+
+- **Framework**: Next.js 15.3.5
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4.0
+- **Icons**: Lucide React
+- **Fonts**: Inter (Google Fonts)
+
+## 📋 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
+
+---
+
+Built with ❤️ using Next.js and TypeScript
